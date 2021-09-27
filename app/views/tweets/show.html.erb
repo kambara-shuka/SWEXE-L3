@@ -1,0 +1,15 @@
+<p>
+    <strong>ツイート:</strong>
+    <%= @tweet.message %>
+</p>
+<p>
+    <strong>時刻:</strong>
+    <%= @tweet.tdate %>
+</p>
+<p>
+    <% time = Time.now %>
+    <% dif = (time - @tweet.tdate).round %>
+    <% dif /= 60 %>
+    <%= dif %>分後
+</p>
+<%= link_to '戻る', '/' %>
