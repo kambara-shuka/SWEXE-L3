@@ -14,5 +14,85 @@
  *= require_self
  */
 body {
-	background-color: cyan
+	background-color: white;
+	width: 980px;
+	margin: 0 auto;
+}
+
+#header {
+    height: 50px;
+    padding-left: 150px;
+}
+
+#sidebar {
+    width: 200px;
+    min-height: 400px;
+    height: auto;
+    margin-top: 10px;
+    line-height: 40px;
+    float: left;
+}
+
+#footer {
+    border-top: solid 1px #CCCCCC;
+    clear: both;
+    text-align: center;
+}
+
+
+.home:before {
+  font-family: 'FontAwesome';
+  content: "\f015";
+}
+
+.hash:before {
+  font-family: 'FontAwesome';
+  content: "\f198";
+}
+
+
+.ikon:before {
+  font-family: 'FontAwesome';
+  content: "\f0a2";
+}
+
+.messe:before {
+  font-family: 'FontAwesome';
+  content: "\f003";
+}
+
+.book:before {
+  font-family: 'FontAwesome';
+  content: "\f02e";
+}
+
+.list:before {
+  font-family: 'FontAwesome';
+  content: "\f022";
+}
+
+.pro:before {
+  font-family: 'FontAwesome';
+  content: "\f007";
+}
+
+.see:before {
+  font-family: 'FontAwesome';
+  content: "\f010";
+}
+
+
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+}
+nav li a:hover {
+    background-color: #555;
+    color:  white;
 }

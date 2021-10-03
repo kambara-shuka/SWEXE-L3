@@ -9,23 +9,22 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
   <body>
     <div id="container">
-		  <div id="header">
-			  <%= render "header" %>
-		  </div>
-		  
-		  <div id="sidebar">
-			  <% #render "sidebar" %>
-		  </div>
-		  
-		  <div id="content">
-			  <%= yield %>
-		  </div>
-		  
-		  <div id="footer">
-			  <% #render "footer" %>
-		  </div>
-	  </div>
+      <div id="header">
+        <%= render "header" %>
+      </div>
+      <div id="sidebar">
+        <%= render "sidebar" %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <%= render "footer" %>
+      </div>
+    </div>
   </body>
 </html>
